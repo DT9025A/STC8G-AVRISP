@@ -1,6 +1,6 @@
 # ArduinoISP-STC8G
 
-使用STC8G1K08A实现的[ArduinoISP@rsbohn](https://github.com/rsbohn/ArduinoISP)
+使用STC8G1K08实现的[ArduinoISP@rsbohn](https://github.com/rsbohn/ArduinoISP)
 
 实测可用
 
