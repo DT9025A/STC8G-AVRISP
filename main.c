@@ -2,17 +2,20 @@
  *          STC8G1K08 AVRISP
  * 
  *            License: BSD
+ * 
+ *    STK500.c Referenced ArduinoISP.ino
  *   Copyright (c) 2008-2011 Randall Bohn
+ * 
  *        Modified by: DT9025A
  *           Date: 2021/2/9
  * ---------------------------------------
  * 
  * 系统时钟 = 5.5296MHz
  * SPI速度 = 系统时钟 / 32 = 172.8KHz
- * 参照: ArduinoISP.ino(44-52)
+ * 参照: ArduinoISP.ino (44-52)
  * 
- * UART速率:19200bps
- * 参照: ArduinoISP.ino(138)
+ * UART速率:115200bps
+ * 参照: ATMEL AVRISP User Guide (138) (https://community.atmel.com/sites/default/files/project_files/ATAVRISP_User_Guide.pdf)
  * 
  * ---------------------------------------
  *     STC8G1K08 引脚分配

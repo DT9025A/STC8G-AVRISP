@@ -1,8 +1,10 @@
 # ArduinoISP-STC8G
 
-使用STC8G1K08实现的[ArduinoISP@rsbohn](https://github.com/rsbohn/ArduinoISP)
+使用STC8G1K08实现的AVRISP/ArduinoISP
 
-实测可用
+STK500协议部分参照了[ArduinoISP@rsbohn](https://github.com/rsbohn/ArduinoISP)
+
+使用avrdudess实测两种模式均可用
 
 ---
 一些杂乱的说明：
