@@ -37,7 +37,7 @@ void main()
     PIN_MODE_CONFIG(P3, PIN_ALL, PIN_MODE_STANDARD);
     PIN_MODE_CONFIG(P5, PIN_ALL, PIN_MODE_STANDARD);
 
-    Uart_Init();
+    Uart_Init(0);
 
     EA = 1; //¿ª×ÜÖÐ¶Ï
 
