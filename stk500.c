@@ -114,6 +114,8 @@ void ISP_Reset_Target(unsigned char reset)
 //进入器件编程模式
 void ISP_Start_Programming_Mode()
 {
+    PIN_MODE_CONFIG(P5, PIN_ALL, PIN_MODE_STANDARD);
+    PIN_MODE_CONFIG(P3, PIN_2 + PIN_3, PIN_MODE_STANDARD);
     // Reset target before driving PIN_SCK or PIN_MOSI
 
     // SPI.begin() will configure SS as output, so SPI master mode is selected.
@@ -151,6 +153,8 @@ void ISP_End_Programming_Mode()
     ISP_Reset_Target(0);
 
     //pinMode(RESET, INPUT);
+    PIN_MODE_CONFIG(P5, PIN_ALL, PIN_MODE_HIRGRESIN);
+    PIN_MODE_CONFIG(P3, PIN_2 + PIN_3, PIN_MODE_HIRGRESIN);
     ISP_PROGMODE = 0;
 }
 
@@ -508,6 +512,7 @@ void ISP_Process_Data()
         ISP_Error_Count = 0;
         ISP_End_Programming_Mode();
         ISP_Send_Empty_Reply();
+        ISP_Reset_Target(0);
         break;
 
     case Cmnd_STK_READ_SIGN:

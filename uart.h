@@ -2,6 +2,7 @@
 #define __UART_H__
 
 #include <STC8G.h>
+#include "ioconfig.h"
 
 //UART 接收缓冲区大小
 #define UART_RECV_BUFFER_SIZE 128
