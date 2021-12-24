@@ -7,7 +7,7 @@ STK500协议部分参照了[ArduinoISP@rsbohn](https://github.com/rsbohn/Arduino
 使用avrdudess实测两种模式均可用
 
 ---
-一些杂乱的说明：
+#### 一些杂乱的说明
 
 ```
       STC8G1K08 引脚分配
@@ -19,28 +19,25 @@ STK500协议部分参照了[ArduinoISP@rsbohn](https://github.com/rsbohn/Arduino
          ---------
 ```
 
-Program Size: data=54.0 xdata=403 const=0 code=2629
+Program Size: data=54.0 xdata=403 code=2671
 
 程序文件编码都是GBK
 
+**烧写时振荡器频率选择5.5296MHz**
+
 ---
 
-文件内容：
+#### 文件夹结构
 
-command：STK500协议常量定义
+bin：存放一些编译出的BIN文件，但请到release页面进行下载
 
-delay：延时函数
+inc：头文件
 
-ioconfig：IO端口模式设置
+src：程序文件
 
-main：主逻辑
-
-spi：SPI接口操作相关
-
-stk500：STK500协议实现
-
-uart：串口相关
+project：Keil UV4 工程文件（使用了STC提供的MCU Database - STC8G1K08 Series）
 
 ---
 
 硬件实现：[立创开源广场](https://oshwhub.com/DT9025A/stc8-arduinoisp)
+

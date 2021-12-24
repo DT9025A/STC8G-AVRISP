@@ -1,1 +1,8 @@
-*.bin
+# Files related to specified filename
+*.bak
+*.LST
+*.M51
+*.PLG
+
+# Files related to specified directory
+project/Output/*
